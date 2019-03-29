@@ -1,0 +1,147 @@
+/* pages/calculator/calculator.wxss */
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    box-sizing: border-box;
+    /*padding: 0.8vw 10rpx;*/
+    height: 100vh;
+
+    font-size: 50rpx;
+    background-color: #010101;
+}
+
+.extra {
+    margin-bottom: 10vw;
+    padding: 0 20rpx;
+}
+
+.extra button {
+    display: inline-block;
+    margin-right: 3.5vw;
+    width: auto;
+    padding: 0 3vw;
+    font-size: 4.5vw;
+    line-height: 2;
+    opacity: .8;
+}
+
+/*------ calculating result ---------------*/
+.display {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 0 6.8vw 2vw;
+    text-align: right;
+    font-size: 20vw;
+
+    color: #ffffff;
+
+    /*overflow-x: scroll;*/
+}
+
+/*------ calculator buttons layout ---------------*/
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.numbers,
+.operators {
+    box-sizing: border-box;
+}
+
+.numbers {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 10rpx;
+    width: 75vw;
+}
+
+.operators {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-right: 10rpx;
+    width: 25vw;
+}
+
+view.bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+view.bottom view {
+    flex-basis: 33.3333%;
+    display: flex;
+}
+
+/*-------- buttons appearance --------------*/
+.buttons button {
+    box-sizing: border-box;
+    margin-bottom: 3vw;
+    width:  21vw;
+    height: 21vw;
+
+    font-size: 1.45em;
+    line-height: 21vw;
+    text-align: center;
+    border-radius: 10.5vw;
+    color: #f4f4f4;
+    background-color: #333333;
+    transition: all 1s;
+}
+
+button.zero {
+    flex: auto;
+    margin: 0 1.75vw;
+    text-align: left;
+    text-indent: 0.3em;
+}
+
+button.func {
+    font-size: 1.2em;
+    letter-spacing: -2px;
+    color: #010101;
+    background-color: #a6a6a6;
+}
+
+button.func.ac {
+    text-indent: -.1em;
+}
+
+button.operator {
+    font-size: 1.65em;
+    background-color: #ff9501;
+}
+
+button.operator.active {
+    background-color: #f4f4f4;
+    color: #ff9501;
+}
+
+/*------ button hover-class -------*/
+.hover-num,
+.hover-func {
+    transition: all .2s;
+}
+
+button.hover-num {
+    color: #f4f4f4;
+    background-color: #656565;
+}
+
+button.hover-func {
+    color: #010101;
+    background-color: #dddddd;
+}
+
+button.hover-operator {
+    background-color: #f4f4f4;
+    color: #ff9501;
+    transition: all .5s;
+}

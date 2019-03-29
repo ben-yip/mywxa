@@ -1,0 +1,66 @@
+/**index.wxss**/
+
+/*.userinfo {*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: center;*/
+/*}*/
+
+/*.userinfo-avatar {*/
+/*width: 128rpx;*/
+/*height: 128rpx;*/
+/*margin: 20rpx;*/
+/*border-radius: 50%;*/
+/*}*/
+
+/*.userinfo-nickname {*/
+/*color: #aaa;*/
+/*}*/
+
+/*.usermotto {*/
+/*margin-top: 200px;*/
+/*}*/
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    box-sizing: border-box;
+    padding: 10px 0;
+    min-height: 100vh;
+    background-color: #fefefe;
+}
+
+.main navigator {
+    border: 1px solid transparent;
+    margin-bottom: 5vw;
+    width: 25vw;
+    height: 25vw;
+
+    font-size: 16px;
+    line-height: 25vw;
+    text-align: center;
+
+    box-shadow: 1px 1px 6px 0 #888;
+    border-radius: 3px;
+
+    background-color: #666;
+    color: #efefef;
+}
+
+.main .redundant {
+    height: 0;
+    visibility: hidden;
+}
+
+/** ================= colors etc.================= **/
+navigator#clock {
+    background-color: #549688;
+}
+
+navigator#calculator {
+    background-color: #e29c45;
+}

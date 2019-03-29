@@ -1,0 +1,71 @@
+<!--pages/calculator/calculator.wxml-->
+
+<view class="main">
+    <view class="extra">
+        <button bindtap="copy">复制</button>
+        <button bindtap="paste">粘贴</button>
+        <!--<button>说明</button>-->
+    </view>
+
+    <view class="display" bindtap="tap2shift">
+        <text style="font-size: {{ display_font_size }}">{{display}}</text>
+    </view>
+
+    <view class="buttons">
+        <view class="numbers">
+            <button class="func ac" hover-class="hover-func"
+                    data-func="ac" bindtap="inputFunc">
+                {{ clearAllFlag ? 'AC' : 'C' }}
+            </button>
+            <button class="func" hover-class="hover-func"
+                    data-func="opposite" bindtap="inputFunc">±
+            </button>
+            <button class="func" hover-class="hover-func"
+                    data-func="percent" bindtap="inputFunc">%
+            </button>
+
+            <button hover-class="hover-num" data-value="7" bindtap="inputNumber">7</button>
+            <button hover-class="hover-num" data-value="8" bindtap="inputNumber">8</button>
+            <button hover-class="hover-num" data-value="9" bindtap="inputNumber">9</button>
+            <button hover-class="hover-num" data-value="4" bindtap="inputNumber">4</button>
+            <button hover-class="hover-num" data-value="5" bindtap="inputNumber">5</button>
+            <button hover-class="hover-num" data-value="6" bindtap="inputNumber">6</button>
+            <button hover-class="hover-num" data-value="1" bindtap="inputNumber">1</button>
+            <button hover-class="hover-num" data-value="2" bindtap="inputNumber">2</button>
+            <button hover-class="hover-num" data-value="3" bindtap="inputNumber">3</button>
+
+            <view class="bottom">
+                <button class="zero" hover-class="hover-num"
+                        data-value="0" bindtap="inputNumber">0
+                </button>
+                <view>
+                    <button hover-class="hover-num"
+                            data-value="." bindtap="inputNumber">.
+                    </button>
+                </view>
+            </view>
+        </view>
+
+        <view class="operators">
+            <button class="operator {{ curOp === 'divide' ? 'active' : '' }}"
+                    hover-class="hover-operator"
+                    data-operator="divide" bindtap="inputOperator">÷
+            </button>
+            <button class="operator {{ curOp === 'multiply' ? 'active' : '' }}"
+                    hover-class="hover-operator"
+                    data-operator="multiply" bindtap="inputOperator">×
+            </button>
+            <button class="operator {{ curOp === 'minus' ? 'active' : '' }}"
+                    hover-class="hover-operator"
+                    data-operator="minus" bindtap="inputOperator">－
+            </button>
+            <button class="operator {{ curOp === 'plus' ? 'active' : '' }}"
+                    hover-class="hover-operator"
+                    data-operator="plus" bindtap="inputOperator">＋
+            </button>
+            <button class="operator" hover-class="hover-operator"
+                    data-operator="equals" bindtap="inputOperator">＝
+            </button>
+        </view>
+    </view>
+</view>

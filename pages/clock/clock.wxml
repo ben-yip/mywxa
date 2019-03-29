@@ -1,0 +1,29 @@
+<!--pages/clock/clock.wxml-->
+<view class="ctnr">
+    <view class="clock">
+        <view class="clock-center"></view>
+
+        <view class="second-hand" animation="{{sHandAnimation}}"></view>
+        <view class="minute-hand" animation="{{mHandAnimation}}"></view>
+        <view class="hour-hand" animation="{{hHandAnimation}}"></view>
+
+        <view class="scale I"></view>
+        <view class="scale II"></view>
+        <view class="scale III"></view>
+        <view class="scale IV"></view>
+        <view class="scale V"></view>
+        <view class="scale VI"></view>
+        <view class="scale VII"></view>
+        <view class="scale VIII"></view>
+        <view class="scale IX"></view>
+        <view class="scale X"></view>
+        <view class="scale XI"></view>
+        <view class="scale XII"></view>
+    </view>
+
+    <!--<view class="info">-->
+        <!--<view>sDeg: {{sDeg}}</view>-->
+        <!--<view>mDeg: {{mDeg}}</view>-->
+        <!--<view>hDeg: {{hDeg}}</view>-->
+    <!--</view>-->
+</view>
